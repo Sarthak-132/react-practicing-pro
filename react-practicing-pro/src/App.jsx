@@ -1,6 +1,7 @@
 import "./App.css";
 import ConditionalValues from "./components/ConditionalValues";
 import DynamicValues from "./components/DynamicValues";
+import NetflixSeries from "./components/NetflixSeries";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <h1>ReactJS</h1>
       <DynamicValues />
       <ConditionalValues />
+      <NetflixSeries />
     </>
   );
 }
