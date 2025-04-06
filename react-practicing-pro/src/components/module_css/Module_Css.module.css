@@ -1,5 +1,5 @@
-/* .super_hit {
-    background-color: #7dcea0;
+.super_hit {
+    background-color: #5aa179;
 }
 
 .average {
@@ -19,4 +19,8 @@
 
 .timepass {
     border: 1px solid #000;
-} */
+}
+
+.btn {
+    padding-left: 2rem;
+}

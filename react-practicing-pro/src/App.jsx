@@ -1,6 +1,7 @@
 import "./App.css";
 import ConditionalValues from "./components/ConditionalValues";
 import DynamicValues from "./components/DynamicValues";
+import Module_Css from "./components/module_css/Module_Css";
 import NetflixSeries from "./components/NetflixSeries";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <DynamicValues />
       <ConditionalValues />
       <NetflixSeries />
+      <Module_Css />
     </>
   );
 }
