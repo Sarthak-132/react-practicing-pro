@@ -20,7 +20,17 @@ const EventPropagation = () => {
         <div className="g-div" onClick={handleGrandClick}>
           <div className="p-div" onClick={handleParentClick}>
             <button className="c-div" onClick={handleChildClick}>
-              child div
+              Bubbling
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div className="Section">
+        <div className="g-div" onClickCapture={handleGrandClick}>
+          <div className="p-div" onClickCapture={handleParentClick}>
+            <button className="c-div" onClickCapture={handleChildClick}>
+              Capturing
             </button>
           </div>
         </div>
