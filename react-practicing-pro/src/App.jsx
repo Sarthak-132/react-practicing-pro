@@ -6,6 +6,10 @@ import EventPropagation from "./components/EventPropagation/EventPropagation";
 import Module_Css from "./components/module_css/Module_Css";
 import NetflixSeries from "./components/NetflixSeries";
 import EventPassProps from "./components/PassingEventasProps/EventPassProps";
+import ActualFormHandling from "./components/RegistrationForm/ActualFormHandling";
+import AvoidFormLikeIt from "./components/RegistrationForm/AvoidFormLikeIt";
+import ContactForm from "./components/RegistrationForm/ContactForm";
+import LoginForm from "./components/RegistrationForm/LoginForm";
 import ShortCircuitAndNullish from "./components/short_circutingAndNullish_Coelescing/short_circutingAndNullish";
 import DerivedState from "./components/State/DerivedState";
 import LiftingStateUp from "./components/State/LiftingStateUp";
@@ -33,7 +37,11 @@ function App() {
       <DerivedState />
       <LiftingStateUp /> */}
       {/* <ShortCircuitAndNullish /> */}
-      <UseStateChallenge />
+      {/* <UseStateChallenge /> */}
+      {/* <AvoidFormLikeIt /> */}
+      <ActualFormHandling />
+      <LoginForm />
+      <ContactForm />
     </>
   );
 }
