@@ -3,6 +3,7 @@ import ConditionalValues from "./components/ConditionalValues";
 import DynamicValues from "./components/DynamicValues";
 import EventHandling from "./components/EventHandling/EventHandling";
 import EventPropagation from "./components/EventPropagation/EventPropagation";
+import { HowNotToFetchApi } from "./components/FetchAPI/HowtoFetchAPI";
 import NottoFetchlikethisAPI from "./components/FetchAPI/NottoFetchlikethisAPI";
 import Module_Css from "./components/module_css/Module_Css";
 import NetflixSeries from "./components/NetflixSeries";
@@ -52,7 +53,8 @@ function App() {
       <UseEffecthook_2 />
       <EffectChallenge />
       <CleanUpFunction /> */}
-      <NottoFetchlikethisAPI />
+      {/* <NottoFetchlikethisAPI /> */}
+      <HowNotToFetchApi />
     </>
   );
 }
