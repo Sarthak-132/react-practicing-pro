@@ -6,6 +6,7 @@ const Pokemon = () => {
   const [pokemon, setPokemon] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [search, setSearch] = useState("");
 
   // API url
   const fetchAPI = "https://pokeapi.co/api/v2/pokemon?limit=24";
@@ -47,6 +48,12 @@ const Pokemon = () => {
     fetchPokemons();
   }, []);
 
+  // Search functionality
+  const searchData = pokemon.filter((SearchedPokemon) =>
+    SearchedPokemon.name.toLowerCase().includes(search.toLowerCase())
+  );
+
+  // loading handling (before data fetch by API)
   if (loading) {
     return (
       <div className="loading">
@@ -55,6 +62,7 @@ const Pokemon = () => {
     );
   }
 
+  // error handling
   if (error) {
     return (
       <div className="loading">
@@ -63,15 +71,30 @@ const Pokemon = () => {
     );
   }
 
+  // main component rendered after loading
   return (
     <>
       <section className="container">
         <header>
           <h1>Catch Pokemon </h1>
         </header>
+
+        {/* search panel */}
+        <div className="pokemon-search">
+          <input
+            type="text"
+            placeholder="Search Pokemon"
+            value={search}
+            onChange={(ev) => setSearch(ev.target.value)}
+          />
+        </div>
+
         <div>
           <ul className="cards">
-            {pokemon.map((curPokemon) => {
+            {/* {pokemon.map((curPokemon) => { */}
+
+            {/* because we are searching the data and we need data do searchdata have all the data and search functionality */}
+            {searchData.map((curPokemon) => {
               return (
                 <PokemonCards key={curPokemon.id} pokemonData={curPokemon} />
               );
