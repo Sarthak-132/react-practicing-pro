@@ -1,7 +1,11 @@
-import React from "react";
+import Pokemon from "./Pokemon";
 
 const App = () => {
-  return <div>Hello</div>;
+  return (
+    <>
+      <Pokemon />
+    </>
+  );
 };
 
 export default App;
