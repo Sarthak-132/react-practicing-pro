@@ -1,0 +1,10 @@
+# To build the project (creates dist folder) 
+=> npm run build 
+
+# on which folder you made this project host shows
+=> explorer .
+
+# for free host your web application
+=> go on netlify deploy manually it will provide URL of deployment - https://app.netlify.com/
+=> To change the URL name go on site configuration and change the url name 
+
