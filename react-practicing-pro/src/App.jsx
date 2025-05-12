@@ -1,13 +1,16 @@
 import "./App.css";
 import ConditionalValues from "./components/ConditionalValues";
+import ContextApi from "./components/ContextAPI/contextApi";
 import DynamicValues from "./components/DynamicValues";
 import EventHandling from "./components/EventHandling/EventHandling";
 import EventPropagation from "./components/EventPropagation/EventPropagation";
 import { HowNotToFetchApi } from "./components/FetchAPI/HowtoFetchAPI";
 import NottoFetchlikethisAPI from "./components/FetchAPI/NottoFetchlikethisAPI";
+import ForwardRef from "./components/ForwardRef_hookReact/ForwardRef";
 import Module_Css from "./components/module_css/Module_Css";
 import NetflixSeries from "./components/NetflixSeries";
 import EventPassProps from "./components/PassingEventasProps/EventPassProps";
+import PropDrilling from "./components/propDrilling/PropDrilling";
 import ActualFormHandling from "./components/RegistrationForm/ActualFormHandling";
 import AvoidFormLikeIt from "./components/RegistrationForm/AvoidFormLikeIt";
 import ContactForm from "./components/RegistrationForm/ContactForm";
@@ -23,7 +26,8 @@ import CleanUpFunction from "./components/useEffectHook/CleanUpFunction";
 import EffectChallenge from "./components/useEffectHook/EffectChallenge";
 import UseEffecthook_1 from "./components/useEffectHook/UseEffecthook_1";
 import UseEffecthook_2 from "./components/useEffectHook/UseEffecthook_2";
-
+import UseId from "./components/UseID/UseId";
+import UseRefHook from "./components/useRefHook/UseRefHook";
 import UseStateChallenge from "./components/useStateChallenge/UseStateChallenge";
 
 function App() {
@@ -54,7 +58,12 @@ function App() {
       <EffectChallenge />
       <CleanUpFunction /> */}
       {/* <NottoFetchlikethisAPI /> */}
-      <HowNotToFetchApi />
+      {/* <HowNotToFetchApi /> */}
+      {/* <UseRefHook /> */}
+      {/* <ForwardRef /> */}
+      {/* <UseId /> */}
+      {/* <PropDrilling /> */}
+      <ContextApi />
     </>
   );
 }
