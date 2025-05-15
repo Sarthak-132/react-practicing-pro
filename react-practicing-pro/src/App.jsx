@@ -1,6 +1,8 @@
 import "./App.css";
 import ConditionalValues from "./components/ConditionalValues";
-import ContextApi from "./components/ContextAPI/contextApi";
+import { BioProvider } from "./components/ContextAPI";
+import ContextHook from "./components/ContextAPI/ContextHook";
+
 import DynamicValues from "./components/DynamicValues";
 import EventHandling from "./components/EventHandling/EventHandling";
 import EventPropagation from "./components/EventPropagation/EventPropagation";
@@ -30,7 +32,7 @@ import UseId from "./components/UseID/UseId";
 import UseRefHook from "./components/useRefHook/UseRefHook";
 import UseStateChallenge from "./components/useStateChallenge/UseStateChallenge";
 
-function App() {
+export const App = () => {
   return (
     <>
       {/* <h1>ReactJS</h1>
@@ -63,9 +65,12 @@ function App() {
       {/* <ForwardRef /> */}
       {/* <UseId /> */}
       {/* <PropDrilling /> */}
-      <ContextApi />
+
+      <BioProvider>
+        <ContextHook />
+      </BioProvider>
     </>
   );
-}
+};
 
 export default App;
