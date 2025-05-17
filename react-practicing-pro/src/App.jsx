@@ -29,6 +29,7 @@ import EffectChallenge from "./components/useEffectHook/EffectChallenge";
 import UseEffecthook_1 from "./components/useEffectHook/UseEffecthook_1";
 import UseEffecthook_2 from "./components/useEffectHook/UseEffecthook_2";
 import UseId from "./components/UseID/UseId";
+import UseReducer from "./components/useReducerHook/UseReducer";
 import UseRefHook from "./components/useRefHook/UseRefHook";
 import UseStateChallenge from "./components/useStateChallenge/UseStateChallenge";
 
@@ -66,9 +67,11 @@ export const App = () => {
       {/* <UseId /> */}
       {/* <PropDrilling /> */}
 
-      <BioProvider>
+      {/* <BioProvider>
         <ContextHook />
-      </BioProvider>
+      </BioProvider> */}
+
+      <UseReducer />
     </>
   );
 };
