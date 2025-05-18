@@ -9,6 +9,7 @@ import EventPropagation from "./components/EventPropagation/EventPropagation";
 import { HowNotToFetchApi } from "./components/FetchAPI/HowtoFetchAPI";
 import NottoFetchlikethisAPI from "./components/FetchAPI/NottoFetchlikethisAPI";
 import ForwardRef from "./components/ForwardRef_hookReact/ForwardRef";
+import { ReactMemo } from "./components/Memo/ReactMemo";
 import Module_Css from "./components/module_css/Module_Css";
 import NetflixSeries from "./components/NetflixSeries";
 import EventPassProps from "./components/PassingEventasProps/EventPassProps";
@@ -29,6 +30,7 @@ import EffectChallenge from "./components/useEffectHook/EffectChallenge";
 import UseEffecthook_1 from "./components/useEffectHook/UseEffecthook_1";
 import UseEffecthook_2 from "./components/useEffectHook/UseEffecthook_2";
 import UseId from "./components/UseID/UseId";
+import UpgradeUseReducer from "./components/useReducerHook/UpgradeUseReducer";
 import UseReducer from "./components/useReducerHook/UseReducer";
 import UseRefHook from "./components/useRefHook/UseRefHook";
 import UseStateChallenge from "./components/useStateChallenge/UseStateChallenge";
@@ -71,7 +73,9 @@ export const App = () => {
         <ContextHook />
       </BioProvider> */}
 
-      <UseReducer />
+      {/* <UseReducer /> */}
+      {/* <UpgradeUseReducer /> */}
+      <ReactMemo />
     </>
   );
 };
