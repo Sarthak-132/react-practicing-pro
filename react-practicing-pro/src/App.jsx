@@ -75,7 +75,8 @@ export const App = () => {
 
       {/* <UseReducer /> */}
       {/* <UpgradeUseReducer /> */}
-      <ReactMemo />
+      {/* <ReactMemo /> */}
+      <UseMemo />
     </>
   );
 };
